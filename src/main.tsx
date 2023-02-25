@@ -19,8 +19,15 @@ const router = createBrowserRouter([
     path: "pricing",
     element: <div>Pricing</div>,
   },
-
 ]);
+
+// const routerJSX = createBrowserRouter(createRoutesFromElements(
+//   <Routes>
+//     <Route path="/" element= {<App />} />
+//     <Route path="about" element= {<div>About</div>} />
+//     <Route path="pricing" element= {<div>Pricing</div>} />
+//   </Routes>
+// ))
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
