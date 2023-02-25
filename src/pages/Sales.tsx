@@ -34,6 +34,7 @@ const ulStyle: CSSProperties = {
   display: 'flex',
   listStyleType: 'none',
   gap: '1rem',
+  padding: 0,
 
 }
 
