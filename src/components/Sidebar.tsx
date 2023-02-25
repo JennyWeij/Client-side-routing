@@ -7,11 +7,11 @@ function Sidebar() {
       <h1 style={h1Style}>Facebooks</h1>
       <nav>
         <ul style={ulStyle}>
-          <li><NavLink to="/">Dashboard</NavLink></li>
-          <li><NavLink to="accounts">Accounts</NavLink></li>
-          <li><NavLink to="sales">Sales</NavLink></li>
-          <li><NavLink to="expenses">Expenses</NavLink></li>
-          <li><NavLink to="reports">Reports</NavLink></li>
+          <li style={linkStyle}><NavLink to="/" style={linkTextStyle}>Dashboard</NavLink></li>
+          <li style={linkStyle}><NavLink to="accounts" style={linkTextStyle}>Accounts</NavLink></li>
+          <li style={linkStyle}><NavLink to="sales" style={linkTextStyle}>Sales</NavLink></li>
+          <li style={linkStyle}><NavLink to="expenses" style={linkTextStyle}>Expenses</NavLink></li>
+          <li style={linkStyle}><NavLink to="reports" style={linkTextStyle}>Reports</NavLink></li>
         </ul>
       </nav>
     </aside>
@@ -32,5 +32,16 @@ const ulStyle: CSSProperties = {
   padding: 0,
   listStyleType: 'none',
 };
+
+const linkStyle: CSSProperties = {
+  padding: '0.5rem',
+  borderRadius: '0.5rem',
+}
+
+const linkTextStyle: CSSProperties = {
+  color: 'black',
+  textDecoration: 'none',
+
+}
 
 export default Sidebar;
