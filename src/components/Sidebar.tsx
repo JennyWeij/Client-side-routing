@@ -7,7 +7,7 @@ function Sidebar() {
       <h1 style={h1Style}>Facebooks</h1>
       <nav>
         <ul style={ulStyle}>
-          <li><NavLink to="/" style={linkStyle}>Dashboard</NavLink></li>
+          <li><NavLink to="." style={linkStyle}>Dashboard</NavLink></li>
           <li><NavLink to="accounts" style={linkStyle}>Accounts</NavLink></li>
           <li><NavLink to="sales" style={linkStyle}>Sales</NavLink></li>
           <li><NavLink to="expenses" style={linkStyle}>Expenses</NavLink></li>

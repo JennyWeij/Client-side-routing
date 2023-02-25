@@ -25,6 +25,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path="invoices" element= {<Invoices />} />
     <Route path="customers" element= {<Customers />} />
     <Route path="deposits" element= {<Deposits />} /> 
+    <Route path="*" element= {<h3>404 not found</h3>} />
     </Route>
     <Route path="expenses" element= {<Expenses />} />
     <Route path="Reports" element= {<Reports />} />
