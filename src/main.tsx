@@ -2,16 +2,32 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createRoutesFromElements, Route, RouterProvider } from 'react-router';
 import { createBrowserRouter } from 'react-router-dom';
+import App from './App';
 import './index.css';
-import App from './pages/App';
+import Accounts from './pages/Accounts';
+import Dashboard from './pages/Dashboard';
+import Expenses from './pages/Expenses';
+import Reports from './pages/Reports';
+import Sales from './pages/Sales';
+import Customers from './pages/sales/Customers';
+import Deposits from './pages/sales/Deposits';
+import Invoices from './pages/sales/Invoices';
+import Overview from './pages/sales/Overview';
+import Subscriptions from './pages/sales/Subsriptions';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element= {<App />}>
-    <Route index element= {<h2>Dashboard</h2>} />
-    <Route path="accounts" element= {<h2>About</h2>} />
-    <Route path="sales" element= {<h2>Sales</h2>} />
-    <Route path="expenses" element= {<h2>Expenses</h2>} />
-    <Route path="Reports" element= {<h2>Reports</h2>} />
+    <Route index element= {<Dashboard />} />
+    <Route path="accounts" element= {<Accounts />} />
+    <Route path="sales" element= {<Sales />}>
+    <Route index element= {<Overview />} />
+    <Route path="subscriptions" element= {<Subscriptions />} />
+    <Route path="invoices" element= {<Invoices />} />
+    <Route path="customers" element= {<Customers />} />
+    <Route path="deposits" element= {<Deposits />} /> 
+    </Route>
+    <Route path="expenses" element= {<Expenses />} />
+    <Route path="Reports" element= {<Reports />} />
     <Route path="*" element= {<h2>404 not found</h2>} />
   </Route>
 ))
