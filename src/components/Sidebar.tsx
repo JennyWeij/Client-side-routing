@@ -19,12 +19,13 @@ function Sidebar() {
 }
 
 const rootStyle: CSSProperties = {
-  background: 'lightgreen',
+  background: '#F5F5F5',
   padding: '1rem',
 };
 
 const h1Style: CSSProperties = {
   margin: '0 0 1rem',
+  color: '#7D7'
 };
 
 const ulStyle: CSSProperties = {
