@@ -9,7 +9,7 @@ function Sales() {
       <nav>
         <ul style={ulStyle}>
           <li>
-            <NavLink to=".">Overview</NavLink>
+            <NavLink to="./">Overview</NavLink>
           </li>
           <li>
             <NavLink to="subscriptions">Subscriptions</NavLink>
@@ -35,7 +35,14 @@ const ulStyle: CSSProperties = {
   listStyleType: 'none',
   gap: '1rem',
   padding: 0,
+  color: 'black',
+  textDecoration: 'none',
 
+}
+
+interface ReactRouterLinkProps {
+  isActive: boolean,
+  isPending: boolean
 }
 
 export default Sales;

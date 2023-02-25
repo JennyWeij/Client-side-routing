@@ -1,5 +1,6 @@
 import { CSSProperties } from "react";
 import { NavLink } from "react-router-dom";
+import { ReactRouterCSS } from "../types";
 
 function Sidebar() {
   return (
@@ -34,21 +35,13 @@ const ulStyle: CSSProperties = {
   listStyleType: 'none',
 };
 
-const linkStyle: ReactRouterCSS = ({isActive}) => ({
+const linkStyle: ReactRouterCSS = (props) => ({
   display: 'block',
   borderRadius: '0.5rem',
   padding: '0.5rem',
   color: 'black',
   textDecoration: 'none',
-  background: isActive ? 'lightgrey' : 'inherit'
+  background: props.isActive ? 'lightgrey' : 'inherit'
 })
-
-type ReactRouterCSS = (props: {
-  isActive: boolean, 
-  isPending: boolean,
-  }) => CSSProperties;
-
-  
-
 
 export default Sidebar;
