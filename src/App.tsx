@@ -20,7 +20,6 @@ const rootStyle: CSSProperties = {
 };
 
 const mainStyle: CSSProperties = {
-  background: 'lightblue',
   flex: 1,
   padding: '1rem',
 }
