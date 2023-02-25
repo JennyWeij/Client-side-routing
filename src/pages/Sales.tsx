@@ -1,3 +1,4 @@
+import { CSSProperties } from "react";
 import { Outlet } from "react-router";
 import { NavLink } from "react-router-dom";
 
@@ -6,7 +7,7 @@ function Sales() {
     <div>
       <h2>Sales</h2>
       <nav>
-        <ul>
+        <ul style={ulStyle}>
           <li>
             <NavLink to=".">Overview</NavLink>
           </li>
@@ -27,6 +28,13 @@ function Sales() {
       <Outlet />
     </div>
   )
+}
+
+const ulStyle: CSSProperties = {
+  display: 'flex',
+  listStyleType: 'none',
+  gap: '1rem',
+
 }
 
 export default Sales;
